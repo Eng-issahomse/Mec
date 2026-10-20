@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="pageTitle">Issa Alhomsi | Mechanical Design Engineer | CAD/CAM &amp; CNC Programming</title>
+  <meta name="description" content="Portfolio of Issa Alhomsi, a mechanical engineer working in CAD/CAM and CNC programming: Autodesk PowerMill 3-axis toolpaths, SOLIDWORKS design, mold design fundamentals and a 3-axis CNC router built as a graduation project." />
+  <meta name="theme-color" content="#0a111d" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Issa Alhomsi | Mechanical Design Engineer | CAD/CAM &amp; CNC Programming" />
+  <meta property="og:description" content="Mechanical engineer working in CAD/CAM and CNC programming: Autodesk PowerMill toolpaths, SOLIDWORKS design and a self-built 3-axis CNC router." />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Issa Alhomsi",
+    "alternateName": "عيسى الحمصي",
+    "jobTitle": "Mechanical Design Engineer",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Damascus University" },
+    "knowsAbout": ["CAD/CAM", "CNC programming", "Autodesk PowerMill", "SOLIDWORKS", "Plastic injection mold design", "GD&T"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ─── NAVBAR ─── -->
+  <header class="navbar" id="navbar">
+    <a class="nav-brand" href="#hero" aria-label="Issa Alhomsi">
+      <span class="brand-mark" aria-hidden="true">IA</span>
+      <span class="brand-name" data-i18n="heroName">Issa Alhomsi</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"      class="nav-link active" data-i18n="navHome">Home</a></li>
+        <li><a href="#about"     class="nav-link" data-i18n="navAbout">About</a></li>
+        <li><a href="#skills"    class="nav-link" data-i18n="navSkills">Skills</a></li>
+        <li><a href="#projects"  class="nav-link" data-i18n="navProjects">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-i18n="navEducation">Education</a></li>
+        <li><a href="#services"  class="nav-link" data-i18n="navServices">Services</a></li>
+        <li><a href="#contact"   class="nav-link" data-i18n="navContact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Arabic">
+      <span class="lang-label" id="langLabel">العربية</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">Mechanical Engineering Portfolio</p>
+          <h1 class="hero-name" data-i18n="heroName">Issa Alhomsi</h1>
+          <p class="hero-title">
+            <span class="sr-only" data-i18n="heroRole">Mechanical Design Engineer | CAD/CAM Engineer | CNC Programmer</span>
+            <span aria-hidden="true"><span id="typedText"></span><span class="cursor-blink">|</span></span>
+          </p>
+          <p class="hero-desc" data-i18n="heroDesc">Mechanical engineer focused on turning designs into manufacturable parts: 3-axis toolpaths in Autodesk PowerMill, SOLIDWORKS modeling, and CNC machine build and calibration.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="heroCtaProjects">View Projects</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="heroCta">Contact Me</a>
+            <a href="#" class="btn btn-ghost cv-link" data-hide-if-missing>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              <span data-i18n="heroCV">Download CV</span>
+            </a>
+          </div>
+          <ul class="focus-list">
+            <li data-i18n="focus1">CAM &amp; CNC programming</li>
+            <li data-i18n="focus2">SOLIDWORKS design</li>
+            <li data-i18n="focus3">Design for manufacturing</li>
+          </ul>
+        </div>
+
+        <div class="hero-side reveal">
+        <!-- PROFILE PHOTO: drop the image at assets/issa-photo.jpg (or change ISSA_PHOTO_PATH in config.js). Until then a placeholder silhouette is shown. -->
+        <div class="hero-photo" id="heroPhoto">
+          <div class="hero-photo-ring outer" aria-hidden="true"></div>
+          <div class="hero-photo-ring dashed" aria-hidden="true"></div>
+          <div class="hero-photo-frame">
+            <svg class="hero-photo-placeholder" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/></svg>
+            <img class="hero-photo-img" id="heroPhotoImg" alt="" width="340" height="340" hidden />
+          </div>
+        
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="section-label"><span>01</span> <span data-i18n="navAbout">About</span></p>
+          <h2 class="section-title" data-i18n="aboutTitle">From design intent<br/><em>to machined part</em></h2>
+        </div>
+        <div class="about-body reveal">
+          <p data-i18n="aboutP1">I am a mechanical engineer from Damascus University working across CAD, CAM and CNC. My hands-on experience is in preparing 3-axis toolpaths in Autodesk PowerMill (roughing, rest machining and finishing) and checking them through simulation and G-code verification.</p>
+          <p data-i18n="aboutP2">For my graduation project I designed, assembled and calibrated a 3-axis CNC router, connecting mechanical design in SOLIDWORKS with component selection, GRBL control and G-code motion.</p>
+          <p data-i18n="aboutP3">I care about drawings that can be manufactured, toolpaths that are safe and efficient, and tolerances that match the function of the part.</p>
+          <ul class="trait-list">
+            <li data-i18n="trait1">Toolpath generation and simulation</li>
+            <li data-i18n="trait2">Machine assembly and calibration</li>
+            <li data-i18n="trait3">Design for manufacturing and assembly</li>
+            <li data-i18n="trait4">Engineering drawings and GD&amp;T</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-label reveal"><span>02</span> <span data-i18n="navSkills">Skills</span></p>
+        <h2 class="section-title reveal" data-i18n="skillsTitle">Tools &amp; technical<br/><em>competencies</em></h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3 data-i18n="skillCat1">CAM &amp; CNC Programming</h3>
+            <ul class="chip-list">
+              <li>Autodesk PowerMill</li>
+              <li data-i18n="sk2">3-Axis CNC Programming</li>
+              <li data-i18n="sk3">Roughing, Rest Machining &amp; Finishing</li>
+              <li data-i18n="sk4">Toolpath Generation and Simulation</li>
+              <li data-i18n="sk5">G-code Generation and Verification</li>
+              <li data-i18n="sk6">GRBL Control Systems</li>
+              <li data-i18n="sk7">Basic Fanuc CNC Knowledge</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n="skillCat2">CAD &amp; Mechanical Design</h3>
+            <ul class="chip-list">
+              <li data-i18n="sk8">SOLIDWORKS 3D Modeling</li>
+              <li data-i18n="sk9">Mechanical Assemblies</li>
+              <li data-i18n="sk10">Sheet Metal Design</li>
+              <li data-i18n="sk11">Engineering Drawings</li>
+              <li>AutoCAD</li>
+              <li data-i18n="sk13">Geometric Dimensioning and Tolerancing (GD&amp;T)</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3 data-i18n="skillCat3">Manufacturing &amp; Mechanical Engineering</h3>
+            <ul class="chip-list">
+              <li data-i18n="sk14">CNC Machining Processes</li>
+              <li data-i18n="sk15">Mechanical Component Selection</li>
+              <li data-i18n="sk16">Machine Assembly and Calibration</li>
+              <li data-i18n="sk17">Design for Manufacturing (DFM)</li>
+              <li data-i18n="sk18">Design for Assembly (DFA)</li>
+              <li data-i18n="sk19">Basic Plastic Injection Mold Design</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label reveal"><span>03</span> <span data-i18n="navProjects">Projects</span></p>
+        <h2 class="section-title reveal" data-i18n="projectsTitle">Selected engineering<br/><em>work</em></h2>
+        <div class="projects-filter" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="filterAll">All</button>
+          <button type="button" class="filter-btn" data-filter="academic" aria-pressed="false" data-i18n="filterAcademic">Academic</button>
+          <button type="button" class="filter-btn" data-filter="cam" aria-pressed="false" data-i18n="filterCam">CAM &amp; Machining</button>
+          <button type="button" class="filter-btn" data-filter="design" aria-pressed="false" data-i18n="filterDesign">Mechanical Design</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Flagship: graduation project -->
+          <article class="project-card project-featured reveal" data-proj="p1" data-cat="academic design">
+            <div class="proj-img"><img src="Pic/7.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <p class="proj-badge" data-i18n="badgeAcademic">Academic project</p>
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>GRBL</span><span>G-code</span><span>CNC Assembly</span></div>
+              <h3 class="proj-title" data-i18n="p1Title">3-Axis CNC Router — Mechanical Design &amp; Implementation</h3>
+              <p class="proj-desc" data-i18n="p1Desc">Graduation project covering the full build: frame design in SOLIDWORKS, selection of motion components, assembly, alignment and calibration, GRBL integration and G-code motion.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p2" data-cat="academic design">
+            <div class="proj-img"><img src="Pic/6.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <p class="proj-badge" data-i18n="badgeAcademic">Academic project</p>
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Mold Design</span><span>DFM</span><span>PMMA</span></div>
+              <h3 class="proj-title" data-i18n="p2Title">Plastic Injection Mold Design</h3>
+              <p class="proj-desc" data-i18n="p2Desc">Core and cavity design, parting lines, side cores where required, draft angles, PMMA shrinkage allowance and DFM principles.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p3" data-cat="cam">
+            <div class="proj-img"><img src="Pic/5.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>PowerMill</span><span>3-Axis CAM</span><span>Mold Cavity</span></div>
+              <h3 class="proj-title" data-i18n="p3Title">Mold Cavity &amp; Core CAM Programming</h3>
+              <p class="proj-desc" data-i18n="p3Desc">Roughing, rest machining and 3D offset finishing toolpaths in Autodesk PowerMill, with collision and gouge checks for mold components.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p4" data-cat="cam">
+            <div class="proj-img"><img src="Pic/11.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>PowerMill</span><span>Roughing</span><span>Verification</span></div>
+              <h3 class="proj-title" data-i18n="p4Title">CAM Roughing Toolpath Verification</h3>
+              <p class="proj-desc" data-i18n="p4Desc">Roughing setup and collision/gouge verification in PowerMill for a multi-pocket mold component.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p5" data-cat="cam">
+            <div class="proj-img"><img src="Pic/12.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>PowerMill</span><span>Mold Core</span><span>Finishing</span></div>
+              <h3 class="proj-title" data-i18n="p5Title">Speaker Mold Core — CAM Programming</h3>
+              <p class="proj-desc" data-i18n="p5Desc">Toolpath programming for a speaker enclosure mold core, combining several finishing strategies and lead-in options.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p6" data-cat="cam">
+            <div class="proj-img"><img src="Pic/13.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>PowerMill</span><span>Simulation</span><span>Finishing</span></div>
+              <h3 class="proj-title" data-i18n="p6Title">Speaker Mold Core — Finishing Strategy</h3>
+              <p class="proj-desc" data-i18n="p6Desc">Finishing-pass planning and simulation for the same mold core, checking surface coverage and safe tool engagement.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p7" data-cat="cam">
+            <div class="proj-img"><img src="Pic/14.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>PowerMill</span><span>3D Offset</span><span>Finishing</span></div>
+              <h3 class="proj-title" data-i18n="p7Title">Housing CAM Toolpath — 3D Offset</h3>
+              <p class="proj-desc" data-i18n="p7Desc">3D offset finishing toolpath for a housing part with circular bosses and pockets, using pattern-based machining.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p8" data-cat="design">
+            <div class="proj-img"><img src="Pic/1.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Assembly</span></div>
+              <h3 class="proj-title" data-i18n="p8Title">Skid-Steer Loader Assembly</h3>
+              <p class="proj-desc" data-i18n="p8Desc">Full 3D assembly of a compact skid-steer loader: boom arm, bucket, cab frame and wheel drivetrain.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p9" data-cat="design">
+            <div class="proj-img"><img src="Pic/4.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Machine Elements</span></div>
+              <h3 class="proj-title" data-i18n="p9Title">Universal Joint Coupling</h3>
+              <p class="proj-desc" data-i18n="p9Desc">Double universal (Cardan) joint coupling for transmitting rotary motion between misaligned shafts.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p10" data-cat="design">
+            <div class="proj-img"><img src="Pic/3.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Frame Design</span></div>
+              <h3 class="proj-title" data-i18n="p10Title">FPV Racing Drone Frame</h3>
+              <p class="proj-desc" data-i18n="p10Desc">Compact 4-motor FPV racing drone frame with a central electronics bay, reinforced arms and motor/propeller mounts.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p11" data-cat="design">
+            <div class="proj-img"><img src="Pic/8.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Gears</span><span>Transmission</span></div>
+              <h3 class="proj-title" data-i18n="p11Title">Multi-Stage Gear Train</h3>
+              <p class="proj-desc" data-i18n="p11Desc">Multi-stage spur gear train for speed reduction, with gear ratio calculations and shaft layout.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p12" data-cat="design">
+            <div class="proj-img"><img src="Pic/9.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Product Design</span></div>
+              <h3 class="proj-title" data-i18n="p12Title">Rotomolded Water Tank</h3>
+              <p class="proj-desc" data-i18n="p12Desc">Ribbed cylindrical water tank with an integrated cap and mounting fittings.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-proj="p13" data-cat="design">
+            <div class="proj-img"><img src="Pic/10.JPG" alt="" loading="lazy" decoding="async" width="800" height="500" /></div>
+            <div class="proj-body">
+              <div class="proj-tags"><span>SOLIDWORKS</span><span>Assembly</span></div>
+              <h3 class="proj-title" data-i18n="p13Title">Wooden Table Design</h3>
+              <p class="proj-desc" data-i18n="p13Desc">Wooden-top table with a welded steel leg frame, sized for everyday use.</p>
+              <button type="button" class="proj-view-btn" data-i18n="viewDetails">View details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── EDUCATION ───
+         Professional experience / internships are intentionally NOT listed until confirmed.
+         To add an item, copy a .tl-item block below and fill it in. -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <p class="section-label reveal"><span>04</span> <span data-i18n="navEducation">Education</span></p>
+        <h2 class="section-title reveal" data-i18n="eduTitle">Education &amp;<br/><em>academic work</em></h2>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-badge" data-i18n="badgeAcademic">Academic project</span>
+            <h3 data-i18n="edu1Role">Graduation Project — 3-Axis CNC Router</h3>
+            <p class="tl-org" data-i18n="edu1Org">Damascus University — Mechanical Engineering</p>
+            <p data-i18n="edu1Desc">Design, assembly and calibration of a 3-axis CNC router, with GRBL control integration and G-code motion.</p>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-badge" data-i18n="badgeEdu">Education</span>
+            <h3 data-i18n="edu2Role">Mechanical Engineering</h3>
+            <p class="tl-org" data-i18n="edu2Org">Damascus University</p>
+            <p data-i18n="edu2Desc">Coursework relevant to machine design, manufacturing processes and CAD/CAM, including SOLIDWORKS, Autodesk PowerMill and CNC machining.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ─── -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section-label reveal"><span>05</span> <span data-i18n="navServices">Services</span></p>
+        <h2 class="section-title reveal" data-i18n="servicesTitle">Areas where I can<br/><em>support your work</em></h2>
+        <p class="section-intro reveal" data-i18n="servicesIntro">Based on the projects shown above, these are the design and CAM tasks I can help with.</p>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="svc-num">01</span><h3 data-i18n="svc1Title">3-Axis CAM Programming</h3><p data-i18n="svc1Desc">Strategies for roughing, rest machining and finishing, checked through simulation before G-code output.</p></article>
+          <article class="service-card reveal"><span class="svc-num">02</span><h3 data-i18n="svc2Title">Autodesk PowerMill Toolpaths</h3><p data-i18n="svc2Desc">Toolpath generation and verification, including collision and gouge checks on mold-type parts.</p></article>
+          <article class="service-card reveal"><span class="svc-num">03</span><h3 data-i18n="svc3Title">SOLIDWORKS 3D Modeling</h3><p data-i18n="svc3Desc">Parametric part modeling and sheet metal design prepared for manufacturing.</p></article>
+          <article class="service-card reveal"><span class="svc-num">04</span><h3 data-i18n="svc4Title">Mechanical Assembly Design</h3><p data-i18n="svc4Desc">Assemblies with component selection, fit checks and interference review.</p></article>
+          <article class="service-card reveal"><span class="svc-num">05</span><h3 data-i18n="svc5Title">Engineering Drawings</h3><p data-i18n="svc5Desc">Manufacturing drawings with dimensions, tolerances, GD&amp;T callouts and a bill of materials.</p></article>
+          <article class="service-card reveal"><span class="svc-num">06</span><h3 data-i18n="svc6Title">Basic Plastic Injection Mold Design</h3><p data-i18n="svc6Desc">Core/cavity split, parting lines, side cores, draft angles and shrinkage allowance, with DFM in mind.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CV ─── -->
+    <section class="cv-section" id="cv">
+      <div class="container">
+        <div class="cv-block reveal">
+          <div>
+            <h2 data-i18n="cvTitle">Curriculum Vitae</h2>
+            <p data-i18n="cvDesc">Download my CV as a PDF for a full summary of education and projects.</p>
+            <p class="cv-note" id="cvNote" hidden data-i18n="cvMissing">The CV file has not been added yet.</p>
+          </div>
+          <a href="#" class="btn btn-primary cv-link" id="cvDownloadMain">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            <span data-i18n="cvBtn">Download CV (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="section-label reveal"><span>06</span> <span data-i18n="navContact">Contact</span></p>
+        <h2 class="section-title reveal" data-i18n="contactTitle">Get in<br/><em>touch</em></h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-intro" data-i18n="contactIntro">For questions about my projects or a design/CAM collaboration, send a message.</p>
+            <ul class="contact-list">
+              <li class="cinfo-item">
+                <span class="cinfo-label" data-i18n="contactEmail">Email</span>
+                <a data-contact="email"><span data-i18n="contactPending">Will be added soon</span></a>
+              </li>
+              <li class="cinfo-item">
+                <span class="cinfo-label" data-i18n="contactPhone">Phone</span>
+                <a data-contact="phone"><span data-i18n="contactPending">Will be added soon</span></a>
+              </li>
+              <li class="cinfo-item" data-contact-wrap="linkedin" hidden>
+                <span class="cinfo-label">LinkedIn</span>
+                <a data-contact="linkedin" target="_blank" rel="noopener noreferrer"></a>
+              </li>
+              <li class="cinfo-item" data-contact-wrap="github" hidden>
+                <span class="cinfo-label">GitHub</span>
+                <a data-contact="github" target="_blank" rel="noopener noreferrer"></a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname" data-i18n="formName">Name</label>
+                <input type="text" id="fname" name="name" autocomplete="name" data-i18n-attr="placeholder|formNamePh" placeholder="Your full name" required aria-describedby="nameErr" />
+                <span class="form-err" id="nameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail" data-i18n="formEmail">Email</label>
+                <input type="email" id="femail" name="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="emailErr" />
+                <span class="form-err" id="emailErr"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject" data-i18n="formSubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" data-i18n-attr="placeholder|formSubjectPh" placeholder="Subject of your message" />
+            </div>
+            <div class="form-group">
+              <label for="fmsg" data-i18n="formMsg">Message</label>
+              <textarea id="fmsg" name="message" rows="5" data-i18n-attr="placeholder|formMsgPh" placeholder="Describe your project or question..." required aria-describedby="msgErr"></textarea>
+              <span class="form-err" id="msgErr"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmit"><span data-i18n="formSend">Send Message</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">IA</span>
+          <div>
+            <strong data-i18n="heroName">Issa Alhomsi</strong>
+            <p data-i18n="footerTagline">Mechanical Design Engineer | CAD/CAM &amp; CNC Programming</p>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#skills" data-i18n="navSkills">Skills</a>
+          <a href="#projects" data-i18n="navProjects">Projects</a>
+          <a href="#education" data-i18n="navEducation">Education</a>
+          <a href="#services" data-i18n="navServices">Services</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a data-footer-social="linkedin" href="#" hidden target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a data-footer-social="github" href="#" hidden target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a data-footer-social="email" href="#" hidden data-i18n="contactEmail">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footerCopy">© {year} Issa Alhomsi. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top" data-i18n-attr="aria-label|backTop">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+  </button>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close" data-i18n-attr="aria-label|close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
